@@ -1,8 +1,17 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+:root {
+    --fonte1: Verdana, Tahoma, sans-serif;
+    --fonte2: "Passion One", sans-serif;
+    --fonte3: "Sriracha", sans-serif;
+}
+
 
 * {
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
 
 body {
@@ -13,13 +22,14 @@ body {
 header {
     background-color: black;
     color: white;
+    font-family: var(--fonte2);
     text-align: center;
     padding-top: 80px;
     padding-bottom: 80px;
 }
 
 header h1 {
-    font-size: 80px;
+    font-size: 10vw;
     font-variant: small-caps;
 }
 
@@ -34,10 +44,12 @@ header p a {
 }
 
 section {
+    font-family: var(--fonte3);
+    font-size: 1.5em;
     padding-top: 10%;
     padding-bottom: 10%;
     padding-left: 32px;
-    line-height: 36px;
+    line-height: 48px;
 }
 
 section.normal {
@@ -46,13 +58,32 @@ section.normal {
 
 section.imagem {
     background-color: gray;
+    box-shadow: inset 1px 1px 20px black;
+}
+
+#firstbackground {
+    background-image: url(/desafios/des012/imagens/background001.jpg);
+    background-position: right center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#secondbackground {
+    background-image: url(/desafios/des012/imagens/background002.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 section.imagem > p {
     color: white;
-    background-color: rgba(0, 0, 0, 0.24);
-    width: 300px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 400px;
+    padding-left: 4px;
+    text-shadow: 1px 1px 1px black;
 }
+
+
 
 
 
