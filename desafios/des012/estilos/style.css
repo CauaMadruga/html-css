@@ -1,52 +1,100 @@
+@charset "UTF-8";
+
 * {
     margin: 0px;
+    padding: 0px;
+}
+
+body {
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
 }
 
 header {
     background-color: black;
     color: white;
-    font-family:Georgia, 'Times New Roman', Times, serif ;
-    padding: 80px;
     text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 header h1 {
-    font-family: Verdana, Tahoma, sans-serif;
-    font-size: 58px;
-    font-weight: bolder;
+    font-size: 80px;
+    font-variant: small-caps;
 }
 
-main {
-    margin: auto;
+header p {
+    padding-top: 6px;
 }
 
-header h3 {
-    font-weight: lighter;
-    padding-top: 12px;
-}
-
-.versos {
-    height: 1000px;
-    text-align: left;
-    padding-top: 170px;
-    padding-left: 40px;
-}
-
-.versos > p {
-    padding: 20px;
-    font-size: 40px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
-}
-
-#firstbackground {
-    background-color: black;
-    background-image: url(/desafios/des012/imagens/background001.jpg);
-    background-position: center right;
-    height: 1000px;
-}
-
-#firstbackground > section > p {
+header p a {
     color: white;
-    background-color: rgba(0, 0, 0, 0.205);
-    margin-right: 220px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+section {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 32px;
+    line-height: 36px;
+}
+
+section.normal {
+    background-color: white;
+}
+
+section.imagem {
+    background-color: gray;
+}
+
+section.imagem > p {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.24);
+    width: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+header p a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 12px;
+}
+
+footer a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
