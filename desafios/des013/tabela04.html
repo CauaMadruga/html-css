@@ -51,70 +51,76 @@
             font-weight: bold;
             text-align: center;
         }
+
+        div#container {
+            overflow-x: auto;
+        }
     </style>
 </head>
 <body>
-    <table>
-        <thead>
-            <tr>
-                <th rowspan="2">Área</th>
-                <th rowspan="2">Disciplinas</th>
-                <th colspan="2">Notas</th>
-                <th rowspan="2">Media</th>
-            </tr>
-            <tr>
-                <th>Nota 1</th>
-                <th>Nota 2</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td rowspan="4" class="grupo">Exatas</td>
-                <td class="materias">Matemática</td>
-                <td class="nota">0.0</td>
-                <td class="nota">0.0</td>
-                <td class="nota">0.0</td>
-            </tr>
-            <tr>
-                <td class="materias">Física</td>
-                <td class="nota">0.0</td>
-                <td class="nota">0.0</td>
-                <td class="nota">0.0</td>
-            </tr>
-            <tr>
-                <td class="materias">Química</td>
-                <td class="nota">0.0</td>
-                <td class="nota">0.0</td>
-                <td class="nota">0.0</td>
-            </tr>
-            <tr>
-                <td class="materias">Biologia</td>
-                <td class="nota">0.0</td>
-                <td class="nota">0.0</td>
-                <td class="nota">0.0</td>
-            </tr>
-            <tr>
-                <td colspan="4" class="media">Média de Exatas</td>
-                <td class="notamedia">0.0</td>
-            </tr>
-            <tr>
-                <td rowspan="2" class="grupo">Humanas</td>
-                <td class="materias">História</td>
-                <td class="nota">0.0</td>
-                <td class="nota">0.0</td>
-                <td class="nota">0.0</td>
-            </tr>
-            <tr>
-                <td class="materias">Geografia</td>
-                <td class="nota">0.0</td>
-                <td class="nota">0.0</td>
-                <td class="nota">0.0</td>
-            </tr>
-            <tr>
-                <td colspan="4" class="media">Média de Humanas</td>
-                <td class="notamedia">0.0</td>
-            </tr>
-        </tbody>
-    </table>
+    <div id="container">
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col" rowspan="2">Área</th>
+                    <th scope="col" rowspan="2">Disciplinas</th>
+                    <th scope="colgroup" colspan="2">Notas</th>
+                    <th scope="col" rowspan="2">Media</th>
+                </tr>
+                <tr>
+                    <th>Nota 1</th>
+                    <th>Nota 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="4" class="grupo">Exatas</td>
+                    <td class="materias">Matemática</td>
+                    <td class="nota">0.0</td>
+                    <td class="nota">0.0</td>
+                    <td class="nota">0.0</td>
+                </tr>
+                <tr>
+                    <td class="materias">Física</td>
+                    <td class="nota">0.0</td>
+                    <td class="nota">0.0</td>
+                    <td class="nota">0.0</td>
+                </tr>
+                <tr>
+                    <td class="materias">Química</td>
+                    <td class="nota">0.0</td>
+                    <td class="nota">0.0</td>
+                    <td class="nota">0.0</td>
+                </tr>
+                <tr>
+                    <td class="materias">Biologia</td>
+                    <td class="nota">0.0</td>
+                    <td class="nota">0.0</td>
+                    <td class="nota">0.0</td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="media">Média de Exatas</td>
+                    <td class="notamedia">0.0</td>
+                </tr>
+                <tr>
+                    <td rowspan="2" class="grupo">Humanas</td>
+                    <td class="materias">História</td>
+                    <td class="nota">0.0</td>
+                    <td class="nota">0.0</td>
+                    <td class="nota">0.0</td>
+                </tr>
+                <tr>
+                    <td class="materias">Geografia</td>
+                    <td class="nota">0.0</td>
+                    <td class="nota">0.0</td>
+                    <td class="nota">0.0</td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="media">Média de Humanas</td>
+                    <td class="notamedia">0.0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
