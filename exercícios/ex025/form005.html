@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main {
+            margin: auto;
+            width: 400px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Formulário</h1>
+        <form action="cadastro.php"></form>
+        <fieldset>
+            <input type="radio" name="genero" id="imasc" checked> <label for="imasc">Masculino</label> <br>
+            <input type="radio" name="genero" id="ifem"> <label for="ifem">Feminino</label> <br>
+        </fieldset>
+        <fieldset>
+            <input type="checkbox" name="tarefa1" id="itarefa1" checked> <label for="itarefa1">tomar banho</label> <br>
+            <input type="checkbox" name="tarefa2" id="itarefa2"> <label for="itarefa2">tomar café</label> <br>
+            <input type="checkbox" name="tarefa3" id="itarefa3"> <label for="itarefa3">pedalar</label> <br>
+            <input type="checkbox" name="tarefa4" id="itarefa4"> <label for="itarefa4">estudar</label> <br>
+        </fieldset>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </main>
+</body>
+</html>
