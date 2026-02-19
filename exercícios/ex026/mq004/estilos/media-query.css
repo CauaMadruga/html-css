@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+/*
+
+pequenas telas: até 600px
+celular: 600-768px
+tablet: 768-992px
+desktop: 992-1200px
+grandes telas: acima de 1200px
+
+*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    main {
+        width: 500px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    main {
+        width: 500px;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main {
+        width: 500px;
+    }
+
+}
+
+@media print {
+    body {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body::after {
+        content: 'Impresso em www.wxyz.com';
+    }
+}
